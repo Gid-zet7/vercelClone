@@ -11,14 +11,14 @@ export default function DeploymentMonitor() {
       // transition={{ duration: 0.5 }}
       className="max-w-6xl mx-auto space-y-6"
     >
-      <div className="grid md:grid-cols-2 gap-6">
-        <Card className="p-6 bg-card">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-0">
+        <div className="p-3 md:p-6 border-r border-gray-800">
           <RollbackStatus />
-        </Card>
+        </div>
 
-        <Card className="p-6 bg-card">
+        <div className="p-3 md:p-6 ">
           <ConformanceMetrics />
-        </Card>
+        </div>
       </div>
     </div>
   );

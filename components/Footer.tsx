@@ -47,7 +47,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-border">
+    <footer className="bg-black border-t border-gray-800">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {Object.entries(footerLinks).map(([section, links]) => (

@@ -12,7 +12,7 @@ export default function Deployment() {
     <section
       className={` bg-black border-y border-gray-800 mb-16 ${geistSans.className} `}
     >
-      <div className="container mx-auto px-4 ">
+      <div className="container mx-auto px-2 md:px-4 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 ">
           {/* Git Deployment Section */}
           <div

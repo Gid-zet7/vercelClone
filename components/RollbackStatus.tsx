@@ -27,7 +27,7 @@ export default function RollbackStatus() {
         // animate={{ opacity: 1 }}
         className="space-y-4 flex flex-col justify-center items-center"
       >
-        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10   border  border-gray-800 bg-gray-950">
+        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10   border  border-gray-800 bg-[#0A0A0A]">
           {/* <CheckCircle2 className="w-5 h-5 text-green-500" /> */}
           <div className="flex-1 flex flex-col">
             <div className="flex-1 flex justify-between">
@@ -190,7 +190,7 @@ export default function RollbackStatus() {
           </defs>
         </svg>
 
-        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10 border border-dotted border-gray-800 bg-gray-950">
+        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10 border border-dotted border-gray-800 bg-[#0A0A0A]">
           {/* <CheckCircle2 className="w-5 h-5 text-green-500" /> */}
           <div className="flex-1 flex flex-col">
             <div className="flex-1 flex justify-between">

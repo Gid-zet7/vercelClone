@@ -5,7 +5,8 @@ import FavouriteTools from "@/components/FavouriteTools";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import ScaleEnterprise from "@/components/ScaleSec";
+import ReadyToDeploy from "@/components/ReadyToDeploy";
+import ScaleEnterprise from "@/components/ScaleEnterprise";
 import Image from "next/image";
 
 // h-[3129.31px]
@@ -57,6 +58,7 @@ export default function Home() {
           {/* <AnalyticsGraph /> */}
           <DeploymentMonitor />
           <ScaleEnterprise />
+          <ReadyToDeploy />
           <Footer />
         </div>
       </main>

@@ -30,7 +30,7 @@ export default function ConformanceMetrics() {
       >
         <div className="md:flex-1 flex flex-col gap-3 border-r border-gray-800 p-3 md:p-8">
           <span className="text-sm text-muted-foreground">Conformance</span>
-          <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md">
+          <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md">
             <div className="flex items-center">
               <span className="text-sm font-medium">Excellent</span>
               {/* <div className="w-2 h-2 rounded-full bg-green-500" /> */}
@@ -75,19 +75,19 @@ export default function ConformanceMetrics() {
                   fill="none"
                 ></circle>
               </svg>
-              <span className="text-xl font-bold">9.5</span>
+              <span className="text-md font-bold">9.5</span>
             </div>
           </div>
 
           <div className="space-y-4 ">
-            <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md">
+            <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md">
               <span className="text-sm text-muted-foreground">
                 Total Issues
               </span>
               <span className="text-sm font-medium">34</span>
             </div>
 
-            <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md ">
+            <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md ">
               <span className="text-sm text-muted-foreground">
                 Major Issues
               </span>
@@ -99,7 +99,7 @@ export default function ConformanceMetrics() {
         <div className="md:flex-1 flex flex-col gap-3 border-r border-gray-800 p-3 md:p-8 ">
           <span className="text-sm text-muted-foreground">Code Owners</span>
 
-          <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md ">
+          <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md ">
             <span className="text-sm text-muted-foreground">
               @vercel/design
             </span>
@@ -109,36 +109,41 @@ export default function ConformanceMetrics() {
                 <AvatarFallback>TS</AvatarFallback>
               </Avatar>
               <Avatar className="w-6 h-6 border-2 border-background">
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>RK</AvatarFallback>
               </Avatar>
               <Avatar className="w-6 h-6 border-2 border-background">
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>MJ</AvatarFallback>
               </Avatar>
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md">
+          <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md">
             <span className="text-sm text-muted-foreground">@vercel/eng</span>
             <div className="flex -space-x-2">
               <Avatar className="w-6 h-6 border-2 border-background">
-                <AvatarImage src="" alt="profile" />
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>SK</AvatarFallback>
               </Avatar>
               <Avatar className="w-6 h-6 border-2 border-background">
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>LM</AvatarFallback>
               </Avatar>
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-2 py-1 bg-gray-500 rounded-md">
+          <div className="flex items-center justify-between px-2 py-1 bg-[#171717] rounded-md">
             <span className="text-sm text-muted-foreground">
               @vercel/marketing
             </span>
             <div className="flex -space-x-2">
               <Avatar className="w-6 h-6 border-2 border-background">
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>SK</AvatarFallback>
               </Avatar>
               <Avatar className="w-6 h-6 border-2 border-background">
+                <AvatarImage src={`profile-compressed.jpg`} alt="profile" />
                 <AvatarFallback>LM</AvatarFallback>
               </Avatar>
             </div>
