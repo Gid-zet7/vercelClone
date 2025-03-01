@@ -173,7 +173,10 @@ export default function Navbar() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Products</AccordionTrigger>
                   {products.map((component) => (
-                    <AccordionContent className="flex gap-2">
+                    <AccordionContent
+                      key={component.title}
+                      className="flex gap-2"
+                    >
                       <span>
                         {" "}
                         <Image
@@ -194,7 +197,10 @@ export default function Navbar() {
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Solutions</AccordionTrigger>
                   {solutions.map((component) => (
-                    <AccordionContent className="flex gap-2">
+                    <AccordionContent
+                      key={component.title}
+                      className="flex gap-2"
+                    >
                       {/* <span>
                         {" "}
                         <Image
@@ -212,7 +218,10 @@ export default function Navbar() {
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Resources</AccordionTrigger>
                   {resources.map((component) => (
-                    <AccordionContent className="flex gap-2">
+                    <AccordionContent
+                      key={component.title}
+                      className="flex gap-2"
+                    >
                       {/* <span>
                         {" "}
                         <Image
