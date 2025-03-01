@@ -1,7 +1,7 @@
-import { Card } from "@/components/ui/card";
+// import { Card } from "@/components/ui/card";
 import RollbackStatus from "./RollbackStatus";
 import ConformanceMetrics from "./ConformanceMetrics";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export default function DeploymentMonitor() {
   return (

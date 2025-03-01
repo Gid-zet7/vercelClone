@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Building2, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 

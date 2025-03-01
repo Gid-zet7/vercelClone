@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { RotateCcw, CheckCircle2 } from "lucide-react";
+// import { motion } from "framer-motion";
+import { RotateCcw } from "lucide-react";
 import { Geist } from "next/font/google";
 
 const geistSans = Geist({

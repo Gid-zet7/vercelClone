@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Geist } from "next/font/google";
@@ -16,7 +16,7 @@ export default function ConformanceMetrics() {
       </div>
 
       <h3 className="text-xl md:text-2xl font-medium">
-        Move fast, don't break things.{" "}
+        Move fast, don&apos;t break things.{" "}
         <span className="text-gray-500 ">
           Keep quality high while maintaining velocity with Enterprise
           Monorepos.
