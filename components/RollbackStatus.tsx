@@ -27,7 +27,7 @@ export default function RollbackStatus() {
         // animate={{ opacity: 1 }}
         className="space-y-4 flex flex-col justify-center items-center"
       >
-        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10   border  border-gray-800 bg-[#0A0A0A]">
+        <div className="flex items-center gap-4 p-3 rounded-md bg-accent/10 border border-gray-800 bg-[#0A0A0A]">
           {/* <CheckCircle2 className="w-5 h-5 text-green-500" /> */}
           <div className="flex-1 flex flex-col">
             <div className="flex-1 flex justify-between">
@@ -42,14 +42,14 @@ export default function RollbackStatus() {
                 xmlns="http://www.w3.org/2000/svg"
                 data-testid="geist-icon"
                 height="16"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
                 style={{ color: "var(--ds-gray-900)" }}
                 viewBox="0 0 16 16"
                 width="16"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C9.95279 12 11.5787 10.6006 11.9298 8.75H15.25H16V7.25H15.25H11.9298C11.5787 5.39935 9.95279 4 8 4C6.04721 4 4.42125 5.39935 4.0702 7.25H0.75H0V8.75H0.75H4.0702C4.42125 10.6006 6.04721 12 8 12Z"
                   fill="#A1A1A1"
                 ></path>
@@ -121,12 +121,12 @@ export default function RollbackStatus() {
             stroke-width="2px"
             fill="none"
           ></path>
-          <g clip-path="url(#clip0_6_107)" fill="none">
+          <g clipPath="url(#clip0_6_107)" fill="none">
             <path
-              clip-rule="evenodd"
+              clipRule="evenodd"
               d="M4 0.5L8 7.5H0L4 0.5Z"
               fill="#45DEC4"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             ></path>
           </g>
           <defs>
@@ -138,9 +138,9 @@ export default function RollbackStatus() {
               y1="40.4324"
               y2="40.4324"
             >
-              <stop stop-color="#E5484D"></stop>
-              <stop offset="0.5" stop-color="#FFC634"></stop>
-              <stop offset="1" stop-color="#45DEC4"></stop>
+              <stop stopColor="#E5484D"></stop>
+              <stop offset="0.5" stopColor="#FFC634"></stop>
+              <stop offset="1" stopColor="#45DEC4"></stop>
             </linearGradient>
             <linearGradient
               gradientUnits="userSpaceOnUse"
@@ -150,10 +150,10 @@ export default function RollbackStatus() {
               y1="88"
               y2="-2.37837"
             >
-              <stop stop-color="var(--ds-background-200)"></stop>
+              <stop stopColor="var(--ds-background-200)"></stop>
               <stop
                 offset="0.322368"
-                stop-color="var(--ds-background-200)"
+                stopColor="var(--ds-background-200)"
                 stop-opacity="0"
               ></stop>
             </linearGradient>
@@ -168,9 +168,9 @@ export default function RollbackStatus() {
               y1="40.4324"
               y2="40.4324"
             >
-              <stop stop-color="#E5484D"></stop>
-              <stop offset="0.5" stop-color="#FFC634"></stop>
-              <stop offset="1" stop-color="#45DEC4"></stop>
+              <stop stopColor="#E5484D"></stop>
+              <stop offset="0.5" stopColor="#FFC634"></stop>
+              <stop offset="1" stopColor="#45DEC4"></stop>
             </linearGradient>
             <linearGradient
               gradientUnits="userSpaceOnUse"
@@ -180,10 +180,10 @@ export default function RollbackStatus() {
               y1="88"
               y2="-2.37837"
             >
-              <stop stop-color="var(--ds-background-200)"></stop>
+              <stop stopColor="var(--ds-background-200)"></stop>
               <stop
                 offset="0.322368"
-                stop-color="var(--ds-background-200)"
+                stopColor="var(--ds-background-200)"
                 stop-opacity="0"
               ></stop>
             </linearGradient>
@@ -211,8 +211,8 @@ export default function RollbackStatus() {
                 width="16"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C9.95279 12 11.5787 10.6006 11.9298 8.75H15.25H16V7.25H15.25H11.9298C11.5787 5.39935 9.95279 4 8 4C6.04721 4 4.42125 5.39935 4.0702 7.25H0.75H0V8.75H0.75H4.0702C4.42125 10.6006 6.04721 12 8 12Z"
                   fill="#A1A1A1"
                 ></path>

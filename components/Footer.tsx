@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiGithub, SiLinkedin, SiX, SiYoutube } from "react-icons/si";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const footerLinks = {
   Products: [
@@ -64,8 +65,9 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-8 pt-8 border-t border-border">
+        <div className="flex justify-between mt-8 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground">All systems normal</p>
+          <ModeToggle />
         </div>
       </div>
     </footer>

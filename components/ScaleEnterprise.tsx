@@ -12,12 +12,12 @@ export default function ScaleEnterprise() {
     >
       <div className="flex items-center gap-2 flex-wrap">
         <h2 className="text-xl font-semibold">Scale your</h2>
-        <div className="bg-accent/20 px-1 md:px-3 py-1 rounded-full flex items-center gap-1 md:gap-2 border border-gray-800">
+        <div className="bg-accent/20 px-2 md:px-3 py-1 rounded-full flex items-center  md:gap-2 border border-gray-800">
           <Building2 className="w-4 h-4" />
-          <Button className=" text-sm font-medium">Enterprise</Button>
+          <Button className="text-sm font-medium">Enterprise</Button>
         </div>
         <h2 className="text-xl font-semibold">without compromising</h2>
-        <div className="bg-accent/20 px-1 md:px-3 py-1 rounded-full flex items-center gap-1 md:gap-2 border border-gray-800">
+        <div className="bg-accent/20 px-2 md:px-3 py-1 rounded-full flex items-center md:gap-2 border border-gray-800">
           <ShieldCheck className="w-4 h-4" />
           <Button className=" text-sm font-medium">Security</Button>
         </div>

@@ -9,40 +9,61 @@ export const products: {
   title: string;
   href: string;
   description: string;
+  image?: string;
 }[] = [
   {
     title: "Previews",
     href: "#",
     description: "Helping teams ship 6x faster",
+    image: "assets/svgexport-2.svg",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "AI",
+    href: "#",
+    description: "Powering breakthroughs.",
+    image: "assets/svgexport-3.svg",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Fluid compute",
+    href: "#",
+    description: "Servers, in serverless form",
+    image: "assets/svgexport-4.svg",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Rendering",
+    href: "#",
+    description: "Fast, scalable and reliable",
+    image: "assets/svgexport-5.svg",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "Observability",
+    href: "#",
+    description: "Trace every step",
+    image: "assets/svgexport-6.svg",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Security",
+    href: "#",
+    description: "Scale without compromising",
+    image: "assets/svgexport-7.svg",
+  },
+  {
+    title: "Nextjs",
+    href: "#",
+    description: "The native Next.js platform",
+    image: "assets/svgexport-8.svg",
+  },
+  {
+    title: "Turborepo",
+    href: "#",
+    description: "Speed with entreprise scale",
+    image: "assets/svgexport-11.svg",
+  },
+  {
+    title: "AI SDK",
+    href: "#",
+    description: "The AI toolkit for typescript",
+    image: "assets/svgexport-12.svg",
   },
 ];
 
@@ -59,7 +80,7 @@ export const resources: {
   },
   {
     title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    href: "#",
     description:
       "For sighted users to preview content available behind a link.",
   },
@@ -101,7 +122,7 @@ export const solutions: {
   },
   {
     title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    href: "#",
     description:
       "For sighted users to preview content available behind a link.",
   },

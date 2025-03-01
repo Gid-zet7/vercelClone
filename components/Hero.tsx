@@ -11,17 +11,16 @@ export default function Hero() {
   return (
     <section className={`${geistSans.className} `}>
       <div className=" block md:hidden ">
-        <div className="flex flex-col justify-center items-center w-full h-[327.562px] p-10 m-0 bg-black static">
-          <div className="flex flex-col justify-center items-center w-11/12 py-4 pb-6 m-0 bg-black static">
-            <h1 className=" font-bold clamp_text-mobile">
-              Your complete platform for the web.
-            </h1>
-            <p className="text-sm">
+        <div className="flex flex-col justify-center items-center w-full h-[327.562px] p-4 md:p-10 m-0 bg-black static">
+          <div className="flex flex-col gap-2 justify-center items-center w-11/12 py-4 pb-6 m-0 bg-black static">
+            <h1 className=" font-bold text-2xl ">Your complete</h1>
+            <span className="font-bold text-2xl ">platform for the web.</span>
+            <p className="text-sm text-gray-500 max-w-56">
               Vercel provides the developer tools and cloud infrastructure to
               build, scale, and secure a faster, more personalized web.
             </p>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 w-full justify-center items-center">
             <Button className="bg-slate-50 text-black">Deploy</Button>
             <Button>Get a Demo</Button>
           </div>

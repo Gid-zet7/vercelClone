@@ -12,14 +12,14 @@ export default function Deployment() {
     <section
       className={` bg-black border-y border-gray-800 mb-16 ${geistSans.className} `}
     >
-      <div className="container mx-auto px-2 md:px-4 ">
+      <div className="container mx-auto md:px-4 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 ">
           {/* Git Deployment Section */}
           <div
             // initial={{ opacity: 0, x: -20 }}
             // whileInView={{ opacity: 1, x: 0 }}
             // viewport={{ once: true }}
-            className="space-y-4 border-r border-gray-800 md:p-6 pb-16 w-full "
+            className="space-y-4 md:border-r border-gray-800 md:p-6 pb-16 w-full "
           >
             <div className="flex items-center gap-2">
               <svg
@@ -119,8 +119,8 @@ export default function Deployment() {
             </h3>
 
             {/* Chat Interface */}
-            <div className=" flex flex-col mt-8 rounded-lg p-2 md:p-6 space-y-6">
-              <div className="flex gap-4 border rounded-xl border-gray-800 w-1/2 p-1 bg-gray-950">
+            <div className=" flex flex-col mt-8 rounded-lg space-y-6">
+              <div className="flex gap-4 border rounded-xl border-gray-800 w-2/3 md:w-1/2 p-1 bg-gray-950">
                 {/* <div className="w-8 h-8 rounded-full bg-gray-700 flex-shrink-0" /> */}
                 <div className="flex-1 space-y-2 flex flex-col ">
                   <span className="text-sm text-gray-300">
@@ -161,7 +161,7 @@ export default function Deployment() {
               </div>
 
               <div className="flex gap-2 justify-center items-center">
-                <div className="flex items-start  border rounded-xl border-gray-800 w-3/5 p-1 bg-gray-950">
+                <div className="flex items-start  border rounded-xl border-gray-800 md:w-3/5 p-1 bg-gray-950">
                   <div className="flex-1">
                     <span className="text-sm text-gray-300">
                       I like it. Does this work with the brand tweaks @mamuso?

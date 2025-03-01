@@ -9,7 +9,7 @@ const geistSans = Geist({
 export default function FavouriteTools() {
   return (
     <div
-      className={`flex flex-col justify-center items-center w-full h-[327.562px] p-0 mb-4 bg-black static ${geistSans.className} clamp_text-fav px-5 border-b border-gray-800`}
+      className={`flex flex-col justify-center items-center w-full h-[327.562px] p-0 mb-4 bg-black static ${geistSans.className} clamp_text-fav border-b border-gray-800`}
     >
       <div>
         <span className="flex gap-2 justify-center items-center">
@@ -19,9 +19,9 @@ export default function FavouriteTools() {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             fill="none"
-            height="28"
+            height="26"
             viewBox="0 0 28 28"
-            width="28"
+            width="26"
           >
             <path
               d="M2.50012 25.5L11.2151 16.3009C11.3749 16.1322 11.3749 15.8679 11.2151 15.6991L2.50012 6.5"
@@ -65,9 +65,9 @@ export default function FavouriteTools() {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             fill="none"
-            height="20"
+            height="19"
             viewBox="0 0 28 28"
-            width="20"
+            width="19"
           >
             <path
               d="M7 10.9375V9.1875H3.5V10.9375H7ZM3.5 10.9375V28H7V10.9375H3.5Z"

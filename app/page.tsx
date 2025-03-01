@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="flex flex-col justify-center items-center w-full py-12 md:py-[90px]">
-        <div className="flex flex-col items-stretch justify-start  w-full max-w-[1100px] h-auto bg-black m-0 box-border gap-0 relative">
+      <main className="flex flex-col justify-center items-center w-full  md:py-[90px]">
+        <div className="flex flex-col items-stretch justify-start w-full max-w-[1100px] h-auto border-x px-3 md:px-0 border-gray-800 bg-black m-0 box-border gap-0 relative">
           <Hero />
           <FavouriteTools />
           <Deployment />

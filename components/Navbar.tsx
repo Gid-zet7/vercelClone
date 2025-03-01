@@ -18,6 +18,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -55,15 +57,16 @@ export default function Navbar() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Products</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-gray-950">
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-black">
                         {products.map((component) => (
                           <ListItem
                             key={component.title}
                             title={component.title}
                             href={component.href}
-                          >
-                            {component.description}
-                          </ListItem>
+                            description={component.description}
+                            image={component.image}
+                            className="flex gap-1"
+                          ></ListItem>
                         ))}
                       </ul>
                     </NavigationMenuContent>
@@ -71,15 +74,14 @@ export default function Navbar() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-gray-950">
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-black">
                         {solutions.map((component) => (
                           <ListItem
                             key={component.title}
                             title={component.title}
+                            description={component.description}
                             href={component.href}
-                          >
-                            {component.description}
-                          </ListItem>
+                          ></ListItem>
                         ))}
                       </ul>
                     </NavigationMenuContent>
@@ -87,15 +89,14 @@ export default function Navbar() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  bg-gray-950">
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  bg-black">
                         {resources.map((component) => (
                           <ListItem
                             key={component.title}
                             title={component.title}
+                            description={component.description}
                             href={component.href}
-                          >
-                            {component.description}
-                          </ListItem>
+                          ></ListItem>
                         ))}
                       </ul>
                     </NavigationMenuContent>
@@ -140,17 +141,17 @@ export default function Navbar() {
               </div>
             </div>
 
-            <button
+            <Menu
               id="hamburger-button"
-              className={`relative flex flex-col h-8 w-8 cursor-pointer hamburger  ${
+              className={`relative flex flex-col h-5 w-8 cursor-pointer hamburger  ${
                 isMobileMenuOpen ? "open" : ""
               } `}
               onClick={toggleMobileMenu}
             >
+              {/* <div className="hamburger-line"></div>
               <div className="hamburger-line"></div>
-              <div className="hamburger-line"></div>
-              <div className="hamburger-line"></div>
-            </button>
+              <div className="hamburger-line"></div> */}
+            </Menu>
           </div>
 
           <div
@@ -171,23 +172,60 @@ export default function Navbar() {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Products</AccordionTrigger>
-                  <AccordionContent>
+                  {products.map((component) => (
+                    <AccordionContent className="flex gap-2">
+                      <span>
+                        {" "}
+                        <Image
+                          src={component.image || ""}
+                          width={20}
+                          height={20}
+                          alt={component.title}
+                          className="rounded-sm"
+                        />
+                      </span>
+                      <span>{component.title}</span>
+                    </AccordionContent>
+                  ))}
+                  {/* <AccordionContent>
                     Yes. It adheres to the WAI-ARIA design pattern.
-                  </AccordionContent>
+                  </AccordionContent> */}
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Solutions</AccordionTrigger>
-                  <AccordionContent>
-                    Yes. It comes with default styles that matches the other
-                    components&apos; aesthetic.
-                  </AccordionContent>
+                  {solutions.map((component) => (
+                    <AccordionContent className="flex gap-2">
+                      {/* <span>
+                        {" "}
+                        <Image
+                          src={component.image || ""}
+                          width={20}
+                          height={20}
+                          alt={component.title}
+                          className="rounded-sm"
+                        />
+                      </span> */}
+                      <span>{component.title}</span>
+                    </AccordionContent>
+                  ))}
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Resources</AccordionTrigger>
-                  <AccordionContent>
-                    Yes. It&apos;s animated by default, but you can disable it
-                    if you prefer.
-                  </AccordionContent>
+                  {resources.map((component) => (
+                    <AccordionContent className="flex gap-2">
+                      {/* <span>
+                        {" "}
+                        <Image
+                          src={component.image || ""}
+                          width={20}
+                          height={20}
+                          alt={component.title}
+                          className="rounded-sm"
+                        />
+                      </span> */}
+                      <span>{component.title}</span>
+                    </AccordionContent>
+                  ))}
                 </AccordionItem>
               </Accordion>
 
@@ -214,28 +252,47 @@ export default function Navbar() {
   );
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
+interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(
+  ({ className, title, children, image, description, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            <div className="flex items-center gap-2">
+              {image && (
+                <Image
+                  src={image}
+                  width={20}
+                  height={20}
+                  alt={title}
+                  className="rounded-sm"
+                />
+              )}
+              <div className="flex flex-col gap-1 text-sm font-medium leading-none">
+                <span>{title}</span>
+                <span>{description}</span>
+              </div>
+            </div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+);
 ListItem.displayName = "ListItem";

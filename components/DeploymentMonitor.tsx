@@ -12,11 +12,11 @@ export default function DeploymentMonitor() {
       className="max-w-6xl mx-auto space-y-6"
     >
       <div className="grid md:grid-cols-2 gap-6 md:gap-0">
-        <div className="p-3 md:p-6 border-r border-gray-800">
+        <div className=" border-r border-gray-800 md:p-6">
           <RollbackStatus />
         </div>
 
-        <div className="p-3 md:p-6 ">
+        <div className=" md:p-6 ">
           <ConformanceMetrics />
         </div>
       </div>
