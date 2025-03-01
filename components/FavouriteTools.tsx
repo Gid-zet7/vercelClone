@@ -1,5 +1,5 @@
 import React from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +45,6 @@ export default function FavouriteTools() {
           {" "}
           Launch globally, instantly
           <svg
-            // xmlns:xlink="http://www.w3.org/1999/xlink"
             xmlns="http://www.w3.org/2000/svg"
             data-testid="geist-icon"
             height="18"
@@ -63,7 +62,6 @@ export default function FavouriteTools() {
           </svg>{" "}
           Keep pushing{" "}
           <svg
-            // xmlns:xlink="http://www.w3.org/1999/xlink"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             fill="none"
@@ -101,7 +99,6 @@ export default function FavouriteTools() {
             ></path>
           </svg>
         </span>{" "}
-        {/* <span className="flex gap-2 justify-center items-center"></span> */}
       </div>
     </div>
   );

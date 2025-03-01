@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { SiGithub, SiLinkedin, SiX, SiYoutube } from "react-icons/si";
-// import { Link } from "wouter";
 
 const footerLinks = {
   Products: [
@@ -58,14 +57,7 @@ export default function Footer() {
               <ul className="mt-6 space-y-4">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href}>
-                      {/* <a className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"> */}
-                      {/* {"icon" in linkLink && linkLink.icon && (
-                          <linkLink.icon className="w-4 h-4" />
-                        )} */}
-                      {link.name}
-                      {/* </a> */}
-                    </Link>
+                    <Link href={link.href}>{link.name}</Link>
                   </li>
                 ))}
               </ul>

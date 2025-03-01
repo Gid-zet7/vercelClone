@@ -23,7 +23,6 @@ export default function Deployment() {
           >
             <div className="flex items-center gap-2">
               <svg
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
                 fill="none"
@@ -118,10 +117,6 @@ export default function Deployment() {
                 designs.
               </span>
             </h3>
-            {/* <h5 className="text-gray-500 text-lg md:text-xl font-medium">
-              Chat with your team on real, production-grade UI, not just
-              designs.
-            </h5> */}
 
             {/* Chat Interface */}
             <div className=" flex flex-col mt-8 rounded-lg p-2 md:p-6 space-y-6">
@@ -138,9 +133,6 @@ export default function Deployment() {
                   <span className="text-sm text-gray-300">
                     some variants we needed.
                   </span>
-                  {/* <button className="text-xs px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition-colors">
-                    Learn More
-                  </button> */}
                 </div>
               </div>
 
@@ -149,7 +141,6 @@ export default function Deployment() {
                   <span className="text-black">Paranthi</span>
                 </div>
                 <svg
-                  // xmlns:xlink="http://www.w3.org/1999/xlink"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   height="18"
@@ -178,7 +169,6 @@ export default function Deployment() {
                   </div>
                 </div>
                 <svg
-                  // xmlns:xlink="http://www.w3.org/1999/xlink"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   height="18"
@@ -204,7 +194,6 @@ export default function Deployment() {
                       This looks great{" "}
                       <div className="bg-white rounded-full w-5 h-5 flex justify-center items-center">
                         <svg
-                          // xmlns:xlink="http://www.w3.org/1999/xlink"
                           fill="none"
                           height="16"
                           viewBox="0 0 16 16"
@@ -222,7 +211,6 @@ export default function Deployment() {
                     </span>
                   </div>
                   <svg
-                    // xmlns:xlink="http://www.w3.org/1999/xlink"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     height="18"

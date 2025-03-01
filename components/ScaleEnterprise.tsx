@@ -25,18 +25,3 @@ export default function ScaleEnterprise() {
     </div>
   );
 }
-
-{
-  /* <div className="space-y-4">
-  <h3 className="text-lg font-medium">Ready to deploy?</h3>
-  <p className="text-sm text-muted-foreground">
-    Start building with a free account. Speak to an expert for your Pro or
-    Enterprise needs.
-  </p>
-
-  <div className="flex gap-4 mt-6">
-    <Button variant="default">Start Deploying</Button>
-    <Button variant="outline">Talk to an Expert</Button>
-  </div>
-</div>; */
-}

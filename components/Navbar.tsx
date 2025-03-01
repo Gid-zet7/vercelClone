@@ -130,33 +130,6 @@ export default function Navbar() {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-              {/* <div>
-                <nav className="main_nav space-x-8 text-xl" aria-label="main">
-                  <ul className="flex gap-2 text-sm">
-                    <li>
-                      <Link href={"/"}>Products</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#"}>Solutions</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#/new-arrivals"}>Resources</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#/new-arrivals"}>Docs</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#/new-arrivals"}>Pricing</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#/new-arrivals"}>Contact</Link>
-                    </li>
-                    <li>
-                      <Link href={"/#/new-arrivals"}>Theme</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div> */}
             </div>
 
             <div className="main_nav">
