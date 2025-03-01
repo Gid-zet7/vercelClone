@@ -12,6 +12,22 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      // keyframes: {
+      //   "open-menu": {
+      //     "0%": {
+      //       transform: "scaleX(0)",
+      //     },
+      //     "80%": {
+      //       transform: "scaleX(1.2)",
+      //     },
+      //     "100%": {
+      //       transform: "scaleX(1)",
+      //     },
+      //   },
+      // },
+      // animation: {
+      //   "open-menu": "open-menu 0.5s ease-in-out forwards",
+      // },
     },
   },
   plugins: [],
