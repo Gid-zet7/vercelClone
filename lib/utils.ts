@@ -74,7 +74,7 @@ export const resources: {
 }[] = [
   {
     title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    href: "#",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
@@ -116,7 +116,7 @@ export const solutions: {
 }[] = [
   {
     title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    href: "#",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
